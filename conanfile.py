@@ -31,3 +31,5 @@ class DuktapeConan(ConanFile):
 
     def package_info(self):  
         self.cpp_info.libs = ["benchmark"]
+        if self.settings.os == "Windows":
+            self.cpp_info.libs.extend(["Shlwapi"]) 
