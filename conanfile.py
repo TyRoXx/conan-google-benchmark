@@ -8,7 +8,7 @@ class DuktapeConan(ConanFile):
     settings = "os", "arch", "compiler", "build_type"
     generators = "cmake"
     url="http://github.com/TyRoXx/conan-google-benchmark"
-    license="MIT"
+    license="Apache License 2.0"
     source_root = "benchmark-1.0.0"
 
     def source(self):
